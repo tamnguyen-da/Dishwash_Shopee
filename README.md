@@ -16,7 +16,8 @@ The report consists of two primary interconnected dashboards, utilizing 2023 dum
 * **Tailored Filtering:** Includes dedicated filters for **Hand Dishwash** and **Machine Dishwash** to account for the fundamental structural and pricing differences between these two sub-categories.
 * **Competitor Benchmarking:** Features a *Sales Performance by Month & Price-per-Order Range* analysis, alongside a *Top 5 Brands by Value Share* tracker to identify and monitor leading competitors.
 
-*![Overview Dashboard - MDW & HDW](path/to/overview_screenshot.png)* *(Note: Replace with your actual dashboard screenshot or GIF link)*
+*![Overview Dashboard - MDW](Images/machinedishwash_overview.png)*
+*![Overview Dashboard - HDW](Images/handdishwash_overview.png)*
 
 #### B. The Category Analysis Dashboard
 * **Granular Analytical Filters:** Equipped with 5 dynamic slicers: *Month*, *Time Frame (Current vs. Previous periods via Calculation Groups)*, *Category*, *Brand*, and *Pack Type*.
@@ -24,14 +25,14 @@ The report consists of two primary interconnected dashboards, utilizing 2023 dum
 * **SKU-Level Deep Dive:** Drill-down capabilities to the exact SKU level, uncovering critical insights regarding standard pack sizes, dominant pack types, and consumer-favorite variants across the market and specific brands.
 * **Strategic Application:** Acts as the foundation for portfolio optimization, driving decisions on pack-size architecture, product renovations, or New Product Introductions (NPI).
 
-*![Category Analysis Dashboard](path/to/category_analyze_screenshot.png)* *(Note: Replace with your actual dashboard screenshot or GIF link)*
+*![Category Analysis Dashboard](Images/category_analyze.png)* 
 
 
 ## 🔀 Data Source
 * To explore the data, please follow the instructions below:
 
 ### 🔗 Data Access
-👉 **[Click here to view the Excel file](https://app.powerbi.com/view?r=eyJrIjoiYmM5OGJhMGQtY2NkNi00MmJmLTlmNmQtMjAwNmNhYjgzMTdlIiwidCI6ImNjY2ExZThjLWJkOTUtNGJiYi1hN2Q5LTgzZmM1YjQ1YjI0NCIsImMiOjEwfQ%3D%3D)**
+👉 **[Click here to view the Excel file](Data_Source/Dummy%20Data-DishwashShopee.xlsx)**
 
 ## 🔀 Data Cleansing Pipeline via Power Query
 
@@ -68,7 +69,7 @@ The `Data Cleanned` dataset was standardized from the source master dataset (`Ra
     * Engineered a **PPG (Price Per Gram/Unit)** metric to calculate the average price point of each brand per sub-category. This accurately captures market dynamics where Machine Dishwash products naturally command a higher price premium compared to Hand Dishwash due to format specificities.
 
 ### 2. Data Model Schema
-*![Data Model Architecture](path/to/your/image.png)* *(Note: Replace the path above with your actual Star Schema diagram image link)*
+*![Data Model Architecture](Images/data_model.png)*
 
 ### 3. Key Metrics & Advanced DAX Analytics
 * **Dynamic Time Frame via Calculation Groups:** Implemented **Calculation Groups** (via Tabular Editor) to establish a dynamic `Time Frame` entity. This advanced design pattern streamlines DAX measure management, enabling seamless switching between period comparisons—including *Current Month*, *Previous Month*, and *Prior Year (YoY)*—across all dashboard visuals without duplicating formulas.
